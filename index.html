@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- html2canvas cdn link -->
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.0/html2canvas.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <title>div 2 jpg using html2canvas js library</title>
+    <style>
+        .result {
+            display: none;
+            
+        }
+ 
+        canvas {
+            border: 2px solid blue;
+            margin-left:0.8rem;
+            
+        }
+
+        .html {
+            margin-left: 1rem;
+            height: 18rem;
+            width:20rem;
+        }
+
+        #htmlContent{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 20rem;
+        height: 18rem;
+        background: #c57878;
+      }
+    
+
+      .bgimg {
+    position: absolute;
+width: 20rem;
+height: 18rem;
+left: 0rem;
+top: 0rem;
+}
+
+.userDiv {
+    position: absolute;
+width: 20rem;
+height: 9rem;
+left: 0rem;
+top: 17rem;
+
+background: linear-gradient(96.5deg, #DB7D25 -0.61%, rgba(229, 234, 210, 0.811979) 49.17%, rgba(72, 222, 48, 0.62) 100%);
+}
+
+.imgDiv {
+    position: absolute;
+width: 6rem;
+height: 6rem;
+left: 0.25rem;
+top: 0.2rem;
+
+background: #D9D9D9;
+}
+
+.img {
+    width: 20rem;
+    height: 18rem;
+    left: 0rem;
+    top: 0rem;
+}
+
+#blah {
+    position: absolute;
+width: 5rem;
+height: 7rem;
+left: 0rem;
+top: 0rem;
+}
+
+.wish {
+    position: absolute;
+width: rem;
+
+left: 0.5rem;
+top: 3rem;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+
+
+
+background: linear-gradient(90deg, rgba(39, 73, 27, 0.915) 0%, rgba(96, 132, 84, 0.915) 47.92%, rgba(152, 186, 139, 0.915) 50.51%, rgba(83, 146, 61, 0.914115) 50.52%, rgba(117, 85, 52, 0.834427) 97.4%, rgba(196, 112, 35, 0.83) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-shadow:  rgba(0, 0, 0, 0.25);
+opacity: 0.4;
+}
+.photo {
+    position: absolute;
+width: 6.5rem;
+height: 8.5rem;
+left: 13rem;
+top: 8rem;
+background: #44251f;
+}
+
+.ftextDiv{
+    position: absolute;
+width: 6.5rem;
+height: 2rem;
+left: 0rem;
+top: 6rem;
+
+}
+
+
+
+.ltextDiv {
+    position: absolute;
+width: 6.5rem;
+height: 1rem;
+left: 0rem;
+top: 7rem;
+text-align: center;
+color: #D9D9D9;
+
+}
+
+.fil {
+    height:1rem;
+    width:10rem;
+    left:2rem;
+    top:7rem
+}
+
+
+    </style>
+</head>
+<body style="background-color:aquamarine ;">
+    <header style="background:rgb(193, 160, 111); width: 22.5rem;padding: 0.08rem;">
+        
+         <div >
+             <div style="float: left;">
+             <img  style="height:2rem;width:2rem;margin-top: -0.7rem;margin-left: 0.5rem;" src="WhatsApp Image 2022-08-14 at 7.39.53 PM.JPEG">
+         </div>
+         <div style="margin-top: 0.5rem;margin-left: 0.5rem;">
+             <h4 style="font-family:  Helvetica, Arial, sans-serif;color:rgb(126, 63, 23)">
+                 Sahalkdm
+             
+             </h4>
+             </div>
+         
+         </div>
+         
+     </div> 
+     </header>
+     <section style="background-color:#DB7D25;width: 22rem;text-align: center;padding: 0.3rem;">
+        <div>
+            <h1>Indian Independence Day<br>August 15</h1>
+            <p>Happy Independence Day of India – We are offering you to create online custom Happy Independence Day of India wishes image and photo frame Free for you. you can write your name and text messages or quotes, to make most excellent Happy Independence Day of India greetings and wishes card.</p>
+        </div>
+    <div class="html" >
+        
+        <div id="htmlContent">
+            <div class="bgimg" >
+                <img class="img" src="WhatsApp Image 2022-08-14 at 7.39.53 PM.jpeg">
+                <div class="photo">
+                    <div class="imgDiv">
+                
+                        <img id="blah" src="#" alt="your image" style="width:6rem;height:6rem"/>
+                    </div>
+                    <div class="ftextDiv">
+                        <strong><input type="text" id="inp1" style="width:6.5rem;height: 2rem;background: none;border: none;font-weight: bold;font-size: 1rem;text-align: center;
+                            color: #ffffff;" placeholder="Name"></strong>
+                    </div>
+                    <div class="ltextDiv">
+                        <strong><input type="text" id="inp2" style="width:6.5rem;height: 2rem;background: none;border: none;font-weight: bold;font-size: 1rem;text-align: center;
+                            color: #ffffff;" placeholder="Class"></strong>
+                    </div>
+                    
+                </div>
+                <h3 class="wish">സ്വാതന്ത്രദിനാശംസകൾ</h3>
+                
+        </div>
+            
+              
+
+              
+
+
+          
+          
+            </div>
+            <div class="fil" style="margin-left:0.5rem;margin-top: 0.5rem;">
+                <p>choose image</p>
+                <input type='file' onchange="readURL(this);" />
+              </div>
+    </div>
+    <div style="padding-top:6rem; width:20rem;padding-left: 0.8rem;">
+        <button id="screen" style="background-color:rgb(190, 210, 58);height: 2rem;cursor: pointer;" onclick="convert();color('#cf9436')">Click here to get download button</button>
+    </div>
+    <div class="result" style="padding-top:1rem; width:20rem;">
+        <a href=""><button id="screen2" style="background-color:rgb(106, 220, 62);height: 2rem;cursor: pointer;" onclick="color2('#dde83c')">Download JPG</button>
+        </a>
+        <hr>
+ 
+    </div>
+</section>
+<footer style="background: linear-gradient(to right, #44251f 0%, #660033 50%, #44251f 100%);width:22.6rem;text-align: center;color: #D9D9D9;padding-top: 1rem;">
+    
+      
+        <div >
+          <a href="https://www.facebook.com/people/Sahal-K/100075902350348/"><i class="fa-brands fa-facebook-square fa-2x p-1" style="color:white"></i></a>
+          <a href="https://www.instagram.com/sahal_kdm/"><i class="fa-brands fa-instagram-square fa-2x " style="color:white;padding-left:0.5rem"></i></a>
+          <a href="https://www.youtube.com/channel/UCizZT38nZSEiluC0GXECBcA"><i class="fa-brands fa-youtube fa-2x p-1" style="color: white;padding-left:0.5rem"></i></a>
+          <p>Copyrights</p>
+        </div>
+      
+
+    
+  </footer>
+    <script>
+        function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('#blah').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+        const div = document.querySelector(".html");
+        const result = document.querySelector(".result");
+ 
+        function convert() {
+            html2canvas(div).then(function (canvas) {
+                result.appendChild(canvas);
+                let cvs = document.querySelector("canvas");
+                let dataURI = cvs.toDataURL("image/jpeg");
+                let downloadLink = document.querySelector(".result>a");
+                downloadLink.href = dataURI;
+                downloadLink.download = "div2canvasimage.jpg";
+                console.log(dataURI);
+            });
+            result.style.display = "block";
+ 
+        }
+        function color(col){
+            document.getElementById("screen").style.background=col
+        }
+        function color2(col){
+            document.getElementById("screen2").style.background=col
+        }
+    </script>
+        <script src="https://kit.fontawesome.com/a5496fd0d2.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
